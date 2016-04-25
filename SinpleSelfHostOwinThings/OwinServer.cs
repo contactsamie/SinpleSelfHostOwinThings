@@ -52,7 +52,7 @@ namespace SinpleSelfHostOwinThings
                     var httpClient = new HttpClient();
                     httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer",
                         _arr.AccessToken);
-                    var response = httpClient.GetAsync("http://localhost:9000/api/Values/GetProtected").Result;
+                    var response = httpClient.GetAsync("http://localhost:8008/api/Values/GetProtected").Result;
                     // display the result
                     if (response.IsSuccessStatusCode)
                     {
